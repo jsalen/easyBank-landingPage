@@ -13,35 +13,39 @@ const Nagivation = () => {
   };
 
   return (
-    <nav>
-      <div className="nav__logo logo">
-        <img src={logo} alt="Company's logo" />
+    <div className="nav-container">
+      <div className="nav">
+        <div className="nav__logo logo">
+          <img src={logo} alt="Company's logo" />
+        </div>
+
+        <div className="nav__toggle" onClick={toggleNav}>
+          <i className="fas fa-bars"></i>
+        </div>
       </div>
 
-      <div className="nav__toggle" onClick={toggleNav}>
-        <i className="fas fa-bars"></i>
-      </div>
+      <nav>
+        <div
+          className={`nav__menu nav__toggleable ${
+            isActive ? "nav__toggleable--show" : ""
+          }`}
+        >
+          <a href="/">Home</a>
+          <a href="/">About</a>
+          <a href="/">Contact</a>
+          <a href="/">Blog</a>
+          <a href="/">Careers</a>
+        </div>
 
-      <div
-        className={`nav__menu nav__toggleable ${
-          isActive ? "nav__toggleable--show" : ""
-        }`}
-      >
-        <a href="/">Home</a>
-        <a href="/">About</a>
-        <a href="/">Contact</a>
-        <a href="/">Blog</a>
-        <a href="/">Careers</a>
-      </div>
-
-      <div
-        className={`nav-btn nav__toggleable ${
-          isActive ? "nav__toggleable--show" : ""
-        }`}
-      >
-        <Button />
-      </div>
-    </nav>
+        <div
+          className={`nav-btn nav__toggleable ${
+            isActive ? "nav__toggleable--show" : ""
+          }`}
+        >
+          <Button />
+        </div>
+      </nav>
+    </div>
   );
 };
 
