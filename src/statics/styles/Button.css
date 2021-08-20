@@ -1,0 +1,22 @@
+.btn {
+  width: 135px;
+  height: 32px;
+  border-radius: 24px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: hsl(0, 0%, 98%);
+  background: rgb(49, 211, 92);
+  background: linear-gradient(
+    90deg,
+    rgba(49, 211, 92, 1) 0%,
+    rgba(43, 183, 218, 1) 100%
+  );
+  outline: none;
+  border: none;
+}
+
+.btn:hover {
+  color: hsl(0, 0%, 98%);
+  opacity: 0.7;
+  cursor: pointer;
+}

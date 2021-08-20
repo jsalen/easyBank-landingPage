@@ -1,0 +1,28 @@
+nav {
+  height: 64px;
+  padding: 0 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(233, 233, 233, 0.65);
+}
+
+.nav__logo:hover {
+  cursor: pointer;
+}
+
+.nav__menu > a {
+  margin-right: 1.5rem;
+  padding-bottom: 22px;
+  height: 64px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: 0.15rem;
+  color: #7b7c7e;
+  text-decoration: none;
+}
+
+.nav__menu > a:hover {
+  border-bottom: 2px solid #31d35c;
+  cursor: pointer;
+}
