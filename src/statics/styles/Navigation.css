@@ -22,13 +22,14 @@ nav {
   padding: 9px 0;
 }
 
-.nav__logo:hover {
-  cursor: pointer;
-}
-
 .nav__toggle > i {
   font-size: 2.2rem;
   color: #7b7c7e;
+}
+
+.nav__toggle-icon {
+  width: 16px;
+  height: 16px;
 }
 
 .nav__toggleable {
@@ -36,17 +37,25 @@ nav {
 }
 
 .nav__toggleable--show {
-  display: flex !important;
+  display: flex;
+}
+
+nav {
+  margin: 16px;
+  padding: 18px;
+  border-radius: 16px;
+  background-color: rgb(243, 243, 243);
 }
 
 .nav__menu {
-  margin-top: 12px;
+  margin-top: 8px;
+  display: flex;
   flex-direction: column;
 }
 
 .nav__menu > a {
   height: 40px;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-weight: 400;
   letter-spacing: 0.15rem;
   color: #7b7c7e;
@@ -54,14 +63,13 @@ nav {
   text-align: center;
 }
 
-.nav__menu > a:hover {
-  border-bottom: 2px solid #31d35c;
-  cursor: pointer;
-}
-
 @media only screen and (min-width: 768px) {
   nav {
     flex-direction: row;
+  }
+
+  .nav__logo:hover {
+    cursor: pointer;
   }
 
   .nav__toggle {
@@ -70,5 +78,10 @@ nav {
 
   .nav__toggleable {
     display: block;
+  }
+
+  .nav__menu > a:hover {
+    border-bottom: 2px solid #31d35c;
+    cursor: pointer;
   }
 }

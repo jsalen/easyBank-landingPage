@@ -4,6 +4,8 @@ import Button from "../Button/Button";
 import "../../statics/styles/Navigation.css";
 
 import logo from "../../statics/images/logo.svg";
+import iconHamburger from "../../statics/images/icon-hamburger.svg";
+import iconClose from "../../statics/images/icon-close.svg";
 
 const Nagivation = () => {
   const [isActive, setIsActive] = useState(false);
@@ -20,16 +22,17 @@ const Nagivation = () => {
         </div>
 
         <div className="nav__toggle" onClick={toggleNav}>
-          <i className="fas fa-bars"></i>
+          <img
+            className="nav__toggle-icon"
+            src={isActive ? iconClose : iconHamburger}
+          />
         </div>
       </div>
 
-      <nav>
-        <div
-          className={`nav__menu nav__toggleable ${
-            isActive ? "nav__toggleable--show" : ""
-          }`}
-        >
+      <nav
+        className={`nav__toggleable ${isActive ? "nav__toggleable--show" : ""}`}
+      >
+        <div className="nav__menu">
           <a href="/">Home</a>
           <a href="/">About</a>
           <a href="/">Contact</a>
@@ -37,11 +40,7 @@ const Nagivation = () => {
           <a href="/">Careers</a>
         </div>
 
-        <div
-          className={`nav-btn nav__toggleable ${
-            isActive ? "nav__toggleable--show" : ""
-          }`}
-        >
+        <div className="nav-btn">
           <Button />
         </div>
       </nav>
