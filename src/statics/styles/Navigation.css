@@ -9,8 +9,15 @@ nav {
 .nav-container {
   width: 100vw;
   height: 64px;
-  padding: 0 6rem;
-  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: sticky;
+  margin-bottom: 40px;
+  padding: 0 3rem;
+  padding-top: 6px;
+  background-color: #fff;
+  z-index: 2;
 }
 
 .nav {
@@ -20,6 +27,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 9px 0;
+  z-index: 2;
 }
 
 .nav__toggle > i {
@@ -34,17 +42,21 @@ nav {
 
 .nav__toggleable {
   display: none;
+  position: absolute;
+  top: 70px;
 }
 
 .nav__toggleable--show {
   display: flex;
+  z-index: 2;
 }
 
 nav {
   margin: 16px;
   padding: 18px;
-  border-radius: 16px;
-  background-color: rgb(243, 243, 243);
+  border-radius: 8px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #bbb;
 }
 
 .nav__menu {
@@ -57,8 +69,7 @@ nav {
   height: 40px;
   font-size: 1.8rem;
   font-weight: 400;
-  letter-spacing: 0.15rem;
-  color: #7b7c7e;
+  color: hsl(233, 26%, 24%);
   text-decoration: none;
   text-align: center;
 }
