@@ -6,12 +6,16 @@
 .hero__image {
   width: 100%;
   min-width: 320px;
-  max-width: 764px;
-  height: 45vh;
-  position: relative;
+  height: 50vh;
+  background-image: url(../images/image-mockups.png),
+    url(../images/bg-intro-mobile.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-.image__background {
+/* .image__background {
   width: 100vw;
   min-width: 320px;
   max-width: 764px;
@@ -30,10 +34,10 @@
   position: absolute;
   top: calc(0% - 190px);
   z-index: 0;
-}
+} */
 
 .hero__cta {
-  padding: 0 3rem;
+  padding: 3rem;
 }
 
 .hero__cta > h1 {
