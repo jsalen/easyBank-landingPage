@@ -7,8 +7,8 @@ nav {
 }
 
 .nav-container {
-  width: 100vw;
-  height: 64px;
+  width: 100%;
+  height: 56px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -74,9 +74,14 @@ nav {
   text-align: center;
 }
 
-@media only screen and (min-width: 768px) {
-  nav {
+@media only screen and (min-width: 1024px) {
+  .nav-container {
     flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .nav {
+    width: 30%;
   }
 
   .nav__logo:hover {
@@ -88,7 +93,26 @@ nav {
   }
 
   .nav__toggleable {
-    display: block;
+    width: 70%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    position: relative;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    top: 0;
+  }
+
+  .nav__menu {
+    flex-direction: row;
+  }
+
+  .nav__menu a {
+    margin-right: 3rem;
   }
 
   .nav__menu > a:hover {

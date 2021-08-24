@@ -39,6 +39,11 @@ footer > div {
   text-decoration: none;
 }
 
+.footer__logo-social > img:hover,
+.footer__links a:hover {
+  cursor: pointer;
+}
+
 .footer__cta {
   display: flex;
   flex-direction: column;

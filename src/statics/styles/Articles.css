@@ -29,6 +29,10 @@
   border-top-right-radius: 12px;
 }
 
+.article__card:hover {
+  cursor: pointer;
+}
+
 .article-card__image img {
   min-width: 320px;
   max-width: 100%;

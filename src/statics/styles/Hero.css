@@ -12,11 +12,18 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
 .hero__cta {
+  width: 100%;
+  height: calc(50vh - 56px);
   padding: 3rem;
+  max-width: 724px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .hero__cta > h1 {
@@ -38,4 +45,20 @@
 
 .hero__cta-btn {
   text-align: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  .hero {
+    display: flex;
+    height: 50vh;
+  }
+
+  .hero__cta {
+    order: 1;
+  }
+
+  .hero__image {
+    order: 2;
+    z-index: 2;
+  }
 }
