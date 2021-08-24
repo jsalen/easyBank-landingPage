@@ -15,27 +15,6 @@
   background-attachment: fixed;
 }
 
-/* .image__background {
-  width: 100vw;
-  min-width: 320px;
-  max-width: 764px;
-  height: auto;
-  min-height: 350px;
-  position: absolute;
-  top: calc(0% - 82px);
-  z-index: 0;
-}
-
-.image__mockup {
-  width: 100%;
-  max-width: 764px;
-  height: auto;
-  min-height: 350px;
-  position: absolute;
-  top: calc(0% - 190px);
-  z-index: 0;
-} */
-
 .hero__cta {
   padding: 3rem;
 }
