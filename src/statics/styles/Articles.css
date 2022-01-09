@@ -1,6 +1,5 @@
 .articles {
-  padding: 0 3rem;
-  padding-top: 7rem;
+  padding: 7rem 3rem;
   background-color: hsl(0, 0%, 98%);
 }
 
@@ -22,27 +21,37 @@
 .article__card {
   min-width: 320px;
   max-width: 380px;
-  margin: 0 2rem;
-  margin-bottom: 3rem;
+  min-height: 430px;
+  margin: 0 2rem 3rem;
+  display: grid;
+  grid-template-rows: 1fr 150px;
   background-color: hsl(0, 0%, 100%);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.1);
 }
 
 .article__card:hover {
   cursor: pointer;
 }
 
+.article__card:hover .article-card__image img {
+  opacity: 0.8;
+  filter: contrast(120%);
+}
+
 .article-card__image img {
   min-width: 320px;
-  max-width: 100%;
-  height: auto;
+  max-width: 380px;
+  height: 100%;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
+  object-fit: cover;
+  transition: all 0.3s ease;
 }
 
 .card__body {
-  padding: 1.5rem;
+  padding: 1.6rem;
 }
 
 .article__author {
